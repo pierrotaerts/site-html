@@ -4,14 +4,362 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Votre Titre</title>
+     <title>Le Langage C</title>
      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <header></header>
-     <main></main>
-     <footer></footer>
+     <header>
+          <div class="container">
+               <h1>Langage de Programmation C</h1>
+               <nav>
+                    <ul>
+                         <li><a href="#accueil">Accueil</a></li>
+                         <li><a href="#histoire">Histoire</a></li>
+                         <li><a href="#exemples">Exemples</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+               </nav>
+          </div>
+     </header>
+
+     <section id="accueil" class="hero">
+          <div class="container">
+               <h2>Le Langage de Programmation C</h2>
+               <p>Découvrez le langage qui a façonné l'informatique moderne. Puissant, efficace et intemporel, le C
+                    reste la référence pour la programmation système et les applications critiques.</p>
+               <p>Créé au début des années 1970, le langage C a influencé la plupart des langages modernes comme C++,
+                    Java, C# et Python. Son approche de bas niveau offre un contrôle précis sur le matériel tout en
+                    maintenant une portabilité exceptionnelle.</p>
+          </div>
+     </section>
+
+     <section id="histoire">
+          <div class="container">
+               <h2>Histoire du Langage C</h2>
+               <div class="history-content">
+                    <div class="history-text">
+                         <p>Le langage C a été créé entre 1969 et 1973 par Dennis Ritchie aux laboratoires Bell. Il a
+                              été conçu pour réécrire le système d'exploitation UNIX, qui était à l'origine écrit en
+                              langage assembleur.</p>
+
+                         <p>L'évolution du langage C est étroitement liée à celle d'UNIX. Le besoin d'un langage de haut
+                              niveau pour écrire des logiciels système a conduit à la création de C, qui offrait un bon
+                              équilibre entre le contrôle du matériel et la productivité du développeur.</p>
+
+                         <p>En 1978, Brian Kernighan et Dennis Ritchie ont publié la première édition de "The C
+                              Programming Language", souvent appelé "K&R". Ce livre a servi de référence pour le langage
+                              pendant de nombreuses années.</p>
+
+                         <p>Dans les années 1980, le langage C a été standardisé par l'ANSI (American National Standards
+                              Institute), créant ainsi le standard ANSI C qui a été adopté par l'Organisation
+                              internationale de normalisation (ISO) en 1990.</p>
+
+                         <p>Aujourd'hui, le C reste l'un des langages les plus utilisés au monde, particulièrement dans
+                              les domaines des systèmes embarqués, des systèmes d'exploitation, des pilotes matériels et
+                              des applications nécessitant des performances élevées.</p>
+
+                         <p>L'héritage du langage C est immense. Des systèmes d'exploitation comme Linux, Windows et
+                              macOS aux logiciels critiques comme les noyaux de bases de données et les systèmes de
+                              contrôle industriel, le C continue de jouer un rôle fondamental dans l'informatique
+                              moderne.</p>
+
+                         <img src="images/dennis_ritchie.jpg" alt="Dennis Ritchie, créateur du langage C" />
+                    </div>
+     </section>
+
+     <section>
+          <div class="container">
+               <h2>Caractéristiques du Langage C</h2>
+
+               <p>Le langage C possède des caractéristiques uniques qui expliquent sa longévité et son adoption massive
+                    dans l'industrie informatique :</p>
+
+               <div class="features-grid">
+                    <div class="feature-card">
+                         <i class="fas fa-tachometer-alt"></i>
+                         <h3>Performance Inégalée</h3>
+                         <p>Le C offre un contrôle précis sur les ressources système et une performance proche du
+                              langage assembleur. Il permet une gestion manuelle de la mémoire, un accès direct au
+                              matériel et une optimisation fine du code compilé.</p>
+                         <p>Cette performance fait du C le langage de choix pour les systèmes d'exploitation, les
+                              pilotes matériels, les systèmes embarqués et les applications temps réel.</p>
+                    </div>
+
+                    <div class="feature-card">
+                         <i class="fas fa-laptop-code"></i>
+                         <h3>Portabilité Exceptionnelle</h3>
+                         <p>Les programmes écrits en C standard peuvent être compilés et exécutés sur presque toutes les
+                              architectures matérielles sans modification. Du microcontrôleur 8 bits aux
+                              supercalculateurs, le C est universel.</p>
+                         <p>Cette portabilité est assurée par la standardisation du langage et la disponibilité de
+                              compilateurs C pour toutes les plateformes imaginables.</p>
+                    </div>
+
+                    <div class="feature-card">
+                         <i class="fas fa-layer-group"></i>
+                         <h3>Fondations Solides</h3>
+                         <p>Comprendre le C donne une base solide pour apprendre d'autres langages comme C++, Java, C#
+                              et Python. Les concepts fondamentaux (pointeurs, gestion mémoire, compilation) sont
+                              transférables.</p>
+                         <p>Le C enseigne une programmation rigoureuse et une compréhension profonde de l'ordinateur, ce
+                              qui forme des développeurs complets capables de résoudre des problèmes complexes.</p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section id="exemples" class="code-examples">
+          <div class="container">
+               <h2>Exemples de Code en C</h2>
+
+               <div class="code-container">
+                    <div class="code-header">
+                         <div class="code-dot dot-red"></div>
+                         <div class="code-dot dot-yellow"></div>
+                         <div class="code-dot dot-green"></div>
+                    </div>
+                    <div class="code-body">
+                         <span class="code-include">#include</span> <span class="code-string">&lt;stdio.h&gt;</span><br>
+                         <span class="code-include">#include</span> <span
+                              class="code-string">&lt;stdlib.h&gt;</span><br><br>
+
+                         <span class="code-comment">// Définition d'une structure</span><br>
+                         <span class="code-keyword">typedef struct</span> {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> id;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">char</span> nom[50];<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">float</span> moyenne;<br>
+                         } Etudiant;<br><br>
+
+                         <span class="code-comment">// Fonction qui calcule la factorielle</span><br>
+                         <span class="code-keyword">int</span> <span class="code-function">factorielle</span>(<span
+                              class="code-keyword">int</span> n) {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">if</span> (n == 0 || n == 1)<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> 1;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">else</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> n *
+                         <span class="code-function">factorielle</span>(n - 1);<br>
+                         }<br><br>
+
+                         <span class="code-keyword">int</span> <span class="code-function">main</span>() {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Hello World</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">printf</span>(<span
+                              class="code-string">"Bonjour le monde!\n"</span>);<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Exemple de boucle</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">for</span>(<span
+                              class="code-keyword">int</span> i = 1; i <= 5; i++) {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                   class="code-function">printf</span>(<span class="code-string">"Factorielle de %d:
+                                   %d\n"</span>, i, <span class="code-function">factorielle</span>(i));<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Utilisation de la
+                                   structure</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;Etudiant etu = {1, <span class="code-string">"Marie
+                                   Dupont"</span>, 15.5};<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">printf</span>(<span
+                                   class="code-string">"Étudiant: %s, Moyenne: %.1f\n"</span>, etu.nom,
+                              etu.moyenne);<br><br>
+
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> 0;<br>
+                              }
+                    </div>
+               </div>
+
+               <h3>Tableaux et Pointeurs</h3>
+               <div class="code-container">
+                    <div class="code-header">
+                         <div class="code-dot dot-red"></div>
+                         <div class="code-dot dot-yellow"></div>
+                         <div class="code-dot dot-green"></div>
+                         <span>tableaux.c</span>
+                    </div>
+                    <div class="code-body">
+                         <span class="code-include">#include</span> <span
+                              class="code-string">&lt;stdio.h&gt;</span><br><br>
+
+                         <span class="code-keyword">int</span> <span class="code-function">main</span>() {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Déclaration et initialisation d'un
+                              tableau</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> nombres[5] = {10, 20, 30, 40,
+                         50};<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Accès aux éléments du tableau</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                              class="code-string">"Premier élément: %d\n"</span>, nombres[0]);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                              class="code-string">"Dernier élément: %d\n"</span>, nombres[4]);<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Parcours du tableau avec une
+                              boucle</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                              class="code-string">"\nParcours du tableau:\n"</span>);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">for</span>(<span
+                              class="code-keyword">int</span> i = 0; i < 5; i++) {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                   class="code-keyword">printf</span>(<span class="code-string">" nombres[%d] =
+                                   %d\n"</span>, i, nombres[i]);<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Pointeurs et tableaux</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> *ptr = nombres; <span
+                                   class="code-comment">// ptr pointe vers le début du tableau</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                                   class="code-string">"\nAccès via pointeurs:\n"</span>);<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                                   class="code-string">" Premier élément: %d\n"</span>, *ptr);<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                                   class="code-string">" Deuxième élément: %d\n"</span>, *(ptr+1));<br><br>
+
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Tableau multidimensionnel</span><br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> matrice[2][3] = {{1, 2, 3},
+                              {4, 5, 6}};<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                                   class="code-string">"\nMatrice 2x3:\n"</span>);<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">for</span>(<span
+                                   class="code-keyword">int</span> i = 0; i < 2; i++) {<br>
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-keyword">for</span>(<span class="code-keyword">int</span> j = 0; j <
+                                        3; j++) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                             class="code-keyword">printf</span>(<span class="code-string">"%d "</span>,
+                                        matrice[i][j]);<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                             class="code-keyword">printf</span>(<span
+                                             class="code-string">"\n"</span>);<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> 0;<br>
+                                        }
+                    </div>
+               </div>
+
+               <!-- Exemple 3: Fonctions et structures -->
+               <h3>Fonctions et Structures</h3>
+               <div class="code-container">
+                    <div class="code-header">
+                         <div class="code-dot dot-red"></div>
+                         <div class="code-dot dot-yellow"></div>
+                         <div class="code-dot dot-green"></div>
+                         <span>structures.c</span>
+                    </div>
+                    <div class="code-body">
+                         <span class="code-include">#include</span> <span class="code-string">&lt;stdio.h&gt;</span><br>
+                         <span class="code-include">#include</span> <span
+                              class="code-string">&lt;string.h&gt;</span><br><br>
+
+                         <span class="code-comment">// Définition d'une structure</span><br>
+                         <span class="code-keyword">struct</span> <span class="code-type">Etudiant</span> {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">char</span> nom[50];<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> age;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">float</span> moyenne;<br>
+                         };<br><br>
+
+                         <span class="code-comment">// Prototype de fonction</span><br>
+                         <span class="code-keyword">void</span> <span
+                              class="code-function">afficherEtudiant</span>(<span class="code-keyword">struct</span>
+                         <span class="code-type">Etudiant</span> e);<br>
+                         <span class="code-keyword">float</span> <span
+                              class="code-function">calculerMoyenne</span>(<span class="code-keyword">float</span>
+                         notes[], <span class="code-keyword">int</span> taille);<br><br>
+
+                         <span class="code-keyword">int</span> <span class="code-function">main</span>() {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Création d'une instance de
+                              structure</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">struct</span> <span
+                              class="code-type">Etudiant</span> etu1;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">strcpy</span>(etu1.nom, <span
+                              class="code-string">"Marie Dupont"</span>);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;etu1.age = 20;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;etu1.moyenne = 15.5;<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Appel de fonction</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-function">afficherEtudiant</span>(etu1);<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// Tableau de notes</span><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">float</span> notes[] = {12.5, 14.0, 16.5,
+                         11.0, 15.5};<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">int</span> taille = <span
+                              class="code-keyword">sizeof</span>(notes) / <span
+                              class="code-keyword">sizeof</span>(notes[0]);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">float</span> moyenne = <span
+                              class="code-function">calculerMoyenne</span>(notes, taille);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                              class="code-string">"\nMoyenne des notes: %.2f\n"</span>, moyenne);<br><br>
+
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> 0;<br>
+                         }<br><br>
+
+                         <span class="code-comment">// Définition des fonctions</span><br>
+                         <span class="code-keyword">void</span> <span
+                              class="code-function">afficherEtudiant</span>(<span class="code-keyword">struct</span>
+                         <span class="code-type">Etudiant</span> e) {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span
+                              class="code-string">"\nInformation etudiant:\n"</span>);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span class="code-string">"
+                              Nom: %s\n"</span>, e.nom);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span class="code-string">"
+                              Age: %d\n"</span>, e.age);<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">printf</span>(<span class="code-string">"
+                              Moyenne: %.2f\n"</span>, e.moyenne);<br>
+                         }<br><br>
+
+                         <span class="code-keyword">float</span> <span
+                              class="code-function">calculerMoyenne</span>(<span class="code-keyword">float</span>
+                         notes[], <span class="code-keyword">int</span> taille) {<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">float</span> somme = 0;<br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">for</span>(<span
+                              class="code-keyword">int</span> i = 0; i < taille; i++) {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;somme += notes[i];<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> somme / taille;<br>
+                              }
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section id="contact">
+          <div class="container">
+               <h2>Formulaire de Contact</h2>
+
+               <form>
+                    <div class="form-group">
+                         <label for="name">Nom :</label>
+                         <input type="text" id="name" placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                         <label for="email">Email :</label>
+                         <input type="email" id="email" placeholder="Votre email">
+                    </div>
+
+                    <div class="form-group">
+                         <label for="subject">Sujet :</label>
+                         <select id="subject">
+                              <option>Question sur le langage C</option>
+                              <option>Problème de compilation</option>
+                              <option>Autre demande</option>
+                         </select>
+                    </div>
+
+                    <div class="form-group">
+                         <label for="message">Message :</label>
+                         <textarea id="message" placeholder="Votre message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer</button>
+               </form>
+          </div>
+     </section>
+
+     <footer>
+          <div class="container">
+               <p>Site sur le langage C</p>
+               <p>© 2025 - Tous droits réservés</p>
+          </div>
+     </footer>
 </body>
 
 </html>
