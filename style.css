@@ -4,6 +4,7 @@
      box-sizing: border-box;
 }
 
+/* Main */
 body {
      font-family: Arial, sans-serif;
      line-height: 1.6;
@@ -54,6 +55,15 @@ header {
      text-align: center;
 }
 
+footer {
+     background: #2c3e50;
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+     margin-top: 40px;
+}
+
+/* Navigation */
 nav ul {
      display: flex;
      justify-content: center;
@@ -76,125 +86,13 @@ nav ul li a:hover {
      border-radius: 4px;
 }
 
+/* Description */
 .hero {
      text-align: center;
      padding: 40px 0;
 }
 
-.code-examples {
-     border-radius: 10px;
-     padding: 30px;
-     border: 1px solid rgba(52, 152, 219, 0.3);
-     margin-top: 40px;
-}
-
-.code-container {
-     background: #1e1e1e;
-     border-radius: 10px;
-     overflow: hidden;
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-     margin: 20px 0;
-     color: white;
-}
-
-.code-header {
-     background: #2d2d2d;
-     padding: 10px 15px;
-     display: flex;
-     align-items: center;
-}
-
-.code-dot {
-     width: 12px;
-     height: 12px;
-     border-radius: 50%;
-     margin-right: 8px;
-}
-
-.dot-red {
-     background: #ff5f56;
-}
-
-.dot-yellow {
-     background: #ffbd2e;
-}
-
-.dot-green {
-     background: #27c93f;
-}
-
-.code-body {
-     padding: 25px;
-     font-family: 'Courier New', monospace;
-     font-size: 16px;
-     line-height: 1.8;
-     overflow-x: auto;
-}
-
-.code-comment {
-     color: #6a9955;
-}
-
-.code-keyword {
-     color: #569cd6;
-}
-
-.code-function {
-     color: #dcdcaa;
-}
-
-.code-string {
-     color: #ce9178;
-}
-
-.code-include {
-     color: #c586c0;
-}
-
-.code-define {
-     color: #9cdcfe;
-}
-
-.code-type {
-     color: #4ec9b0;
-}
-
-.form-group {
-     margin-bottom: 15px;
-}
-
-.form-group label {
-     display: block;
-     margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-     width: 100%;
-     padding: 8px;
-     border: 1px solid #ddd;
-     border-radius: 4px;
-}
-
-.submit-btn {
-     background: #3498db;
-     color: white;
-     border: none;
-     padding: 10px 20px;
-     border-radius: 4px;
-     cursor: pointer;
-}
-
-
-footer {
-     background: #2c3e50;
-     color: white;
-     text-align: center;
-     padding: 20px 0;
-     margin-top: 40px;
-}
-
+/* Feature */
 .features {
      background-color: white;
 }
@@ -232,6 +130,106 @@ footer {
      color: var(--primary);
 }
 
+/* Code */
+.code-examples {
+     border-radius: 10px;
+     padding: 30px;
+     border: 1px solid rgba(52, 152, 219, 0.3);
+     margin-top: 40px;
+}
+
+.code-container {
+     background: #1e1e1e;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     margin: 20px 0;
+     color: white;
+}
+
+.code-header {
+     background: #2d2d2d;
+     padding: 10px 15px;
+     display: flex;
+     align-items: center;
+}
+
+.code-dot {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     margin-right: 8px;
+}
+
+.dot-red {
+     background: #ff5f56;
+}
+.dot-yellow {
+     background: #ffbd2e;
+}
+.dot-green {
+     background: #27c93f;
+}
+
+.code-body {
+     padding: 25px;
+     font-family: 'Courier New', monospace;
+     font-size: 16px;
+     line-height: 1.8;
+     overflow-x: auto;
+}
+
+.code-comment {
+     color: #6a9955;
+}
+.code-keyword {
+     color: #569cd6;
+}
+.code-function {
+     color: #dcdcaa;
+}
+.code-string {
+     color: #ce9178;
+}
+.code-include {
+     color: #c586c0;
+}
+.code-define {
+     color: #9cdcfe;
+}
+.code-type {
+     color: #4ec9b0;
+}
+
+/* Formulaire */
+.form-group {
+     margin-bottom: 15px;
+}
+
+.form-group label {
+     display: block;
+     margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+}
+
+.submit-btn {
+     background: #3498db;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+/* Mobile */
 @media (max-width: 600px) {
      nav ul {
           flex-direction: column;
